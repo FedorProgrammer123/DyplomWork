@@ -1,29 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\C# Projects\\DyplomWork\\",
+  "WorkspaceRootPath": "D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|d:\\c# projects\\dyplomwork\\pages\\autorization.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|d:\\c# projects\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\dyplomwork\\dyplomwork\\pages\\autorization.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:pages\\autorization.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|d:\\c# projects\\dyplomwork\\classes\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:classes\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|d:\\c# projects\\dyplomwork\\classes\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:classes\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|d:\\c# projects\\dyplomwork\\pages\\autorization.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:pages\\autorization.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|d:\\c# projects\\dyplomwork\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|d:\\c# projects\\dyplomwork\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -34,66 +22,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Manager.cs",
-              "DocumentMoniker": "D:\\C# Projects\\DyplomWork\\Classes\\Manager.cs",
-              "RelativeDocumentMoniker": "Classes\\Manager.cs",
-              "ToolTip": "D:\\C# Projects\\DyplomWork\\Classes\\Manager.cs",
-              "RelativeToolTip": "Classes\\Manager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwwAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T00:30:19.746Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Context.cs",
-              "DocumentMoniker": "D:\\C# Projects\\DyplomWork\\Classes\\Context.cs",
-              "RelativeDocumentMoniker": "Classes\\Context.cs",
-              "ToolTip": "D:\\C# Projects\\DyplomWork\\Classes\\Context.cs",
-              "RelativeToolTip": "Classes\\Context.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T22:36:12.478Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Pages\\Autorization.xaml.cs",
-              "DocumentMoniker": "D:\\C# Projects\\DyplomWork\\Pages\\Autorization.xaml.cs",
+              "Title": "Autorization.xaml.cs",
+              "DocumentMoniker": "D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\Pages\\Autorization.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\Autorization.xaml.cs",
-              "ToolTip": "D:\\C# Projects\\DyplomWork\\Pages\\Autorization.xaml.cs",
+              "ToolTip": "D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\Pages\\Autorization.xaml.cs",
               "RelativeToolTip": "Pages\\Autorization.xaml.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAA2wDMAAABPAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAA2wDQAAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-13T22:24:00.903Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Autorization.xaml",
-              "DocumentMoniker": "D:\\C# Projects\\DyplomWork\\Pages\\Autorization.xaml",
-              "RelativeDocumentMoniker": "Pages\\Autorization.xaml",
-              "ToolTip": "D:\\C# Projects\\DyplomWork\\Pages\\Autorization.xaml",
-              "RelativeToolTip": "Pages\\Autorization.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-13T22:01:01.918Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "App.xaml",
-              "DocumentMoniker": "D:\\C# Projects\\DyplomWork\\App.xaml",
+              "DocumentMoniker": "D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "D:\\C# Projects\\DyplomWork\\App.xaml",
+              "ToolTip": "D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-01-13T19:58:23.054Z",
@@ -101,15 +51,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\C# Projects\\DyplomWork\\MainWindow.xaml",
+              "DocumentMoniker": "D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "D:\\C# Projects\\DyplomWork\\MainWindow.xaml",
+              "ToolTip": "D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-13T19:51:42.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T19:51:42.338Z"
             }
           ]
         }
