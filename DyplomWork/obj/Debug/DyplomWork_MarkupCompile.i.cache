@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\C# Projects\DyplomWork\obj\Debug\
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\
 DyplomWork
 none
 false
 DEBUG;TRACE
-D:\C# Projects\DyplomWork\App.xaml
-2-1186381182
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\App.xaml
+5-745815634
 2-1747602707
-26121571326
-19416451481
-MainWindow.xaml;Pages\Autorization.xaml;
+2991678026
+19-1235703451
+MainWindow.xaml;Pages\AdminCabinet.xaml;Pages\Autorization.xaml;Pages\StudentCabinet.xaml;Pages\TeacherCabinet.xaml;
 
 True
 

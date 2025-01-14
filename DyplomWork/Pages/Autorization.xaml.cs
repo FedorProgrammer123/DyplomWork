@@ -50,12 +50,15 @@ namespace DyplomWork.Pages
                     {
                         case 1:
                             MessageBox.Show("Добро пожаловать, администратор");
+                            Manager.MainFrame.Navigate(new Pages.AdminCabinet());
                             break;
                         case 2:
                             MessageBox.Show("Добро пожаловать, преподаватель");
+                            Manager.MainFrame.Navigate(new Pages.TeacherCabinet());
                             break;
                         case 3:
                             MessageBox.Show("Добро пожаловать, студент");
+                            Manager.MainFrame.Navigate(new Pages.StudentCabinet());
                             break;
                     }
                     MessageBox.Show("Добро пожаловать");
