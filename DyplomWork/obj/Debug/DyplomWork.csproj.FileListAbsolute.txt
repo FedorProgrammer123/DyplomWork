@@ -23,3 +23,34 @@ D:\C# Projects\DyplomWork\obj\Debug\Pages\Autorization.g.cs
 D:\C# Projects\DyplomWork\obj\Debug\DyplomWork_Content.g.cs
 D:\C# Projects\DyplomWork\obj\Debug\Pages\Autorization.baml
 D:\C# Projects\DyplomWork\obj\Debug\DyplomWork.csproj.Up2Date
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\bin\Debug\DyplomWork.exe.config
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\bin\Debug\DyplomWork.exe
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\bin\Debug\DyplomWork.pdb
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\bin\Debug\EntityFramework.dll
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\bin\Debug\EntityFramework.SqlServer.dll
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\bin\Debug\EntityFramework.xml
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\bin\Debug\EntityFramework.SqlServer.xml
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\bin\Debug\ru\EntityFramework.resources.dll
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\DyplomWork.csproj.AssemblyReference.cache
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\MainWindow.g.cs
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\Pages\AdminCabinet.g.cs
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\Pages\Autorization.g.cs
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\Pages\StudentCabinet.g.cs
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\Pages\TeacherCabinet.g.cs
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\App.g.cs
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\DyplomWork_Content.g.cs
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\DyplomWork_MarkupCompile.cache
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\DyplomWork_MarkupCompile.lref
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\App.baml
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\MainWindow.baml
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\Pages\Autorization.baml
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\Pages\AdminCabinet.baml
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\Pages\StudentCabinet.baml
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\Pages\TeacherCabinet.baml
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\DyplomWork.g.resources
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\DyplomWork.Properties.Resources.resources
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\DyplomWork.csproj.GenerateResource.cache
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\DyplomWork.csproj.CoreCompileInputs.cache
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\DyplomWork.csproj.Up2Date
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\DyplomWork.exe
+D:\C# Projects\Новая папка\DyplomWork\DyplomWork\obj\Debug\DyplomWork.pdb

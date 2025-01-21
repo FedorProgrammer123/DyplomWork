@@ -11,10 +11,41 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="75"></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <TextBlock Text="Кабинет студента" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        </Grid>
+        <Grid Grid.Row="1">
+            <TextBlock Text="{Binding firstName}" Name="ShowName" Padding="0 20 0 0"></TextBlock>
+            <TextBlock Text="{Binding lastName}" Name="ShowLastName"></TextBlock>
+        </Grid>
+        <Grid Grid.Row="2">
+            <ListView x:Name="ShowTest">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <TextBlock>
+                                <Run Text="Название теста:"></Run>
+                                <Run Text="{Binding TitleTest.title}"></Run>
+                            </TextBlock>
+                            <TextBlock>
+                                <Run Text="Описание:"></Run>
+                                <Run Text="{Binding description}"></Run>
+                            </TextBlock>
+                            <TextBlock>
+                                <Run Text="Максимальный балл:"></Run>
+                                <Run Text="{Binding maxScore}"></Run>
+                            </TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+        <Grid Grid.Row="3">
+            <Button Content="Выйти" Name="ExitButton" Click="ExitButton_Click"></Button>
         </Grid>
     </Grid>
 </Page>

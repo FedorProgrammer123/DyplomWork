@@ -20,9 +20,17 @@ namespace DyplomWork.Pages
     /// </summary>
     public partial class StudentCabinet : Page
     {
-        public StudentCabinet()
+        public StudentCabinet(string username,string lastname)
         {
             InitializeComponent();
+            ShowName.Text = "Имя: " + username;
+            ShowLastName.Text = "Фамилия: " + lastname;
+            ShowTest.ItemsSource = Classes.Context.GetContext().test.ToList();
+        }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Autorization());
         }
     }
 }

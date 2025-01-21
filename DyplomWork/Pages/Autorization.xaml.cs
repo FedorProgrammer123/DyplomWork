@@ -58,10 +58,9 @@ namespace DyplomWork.Pages
                             break;
                         case 3:
                             MessageBox.Show("Добро пожаловать, студент");
-                            Manager.MainFrame.Navigate(new Pages.StudentCabinet());
+                            Manager.MainFrame.Navigate(new Pages.StudentCabinet(ExixstsUser.firstName,ExixstsUser.lastName));
                             break;
                     }
-                    MessageBox.Show("Добро пожаловать");
                 }
             }
         }

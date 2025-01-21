@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\C# Projects\Новая папка\DyplomWork\DyplomWork\App.xaml
-2-1186381182
+5-745815634
 2-1747602707
-26121571326
+28-1830100095
 19-1235703451
-MainWindow.xaml;Pages\Autorization.xaml;
+MainWindow.xaml;Pages\AdminCabinet.xaml;Pages\Autorization.xaml;Pages\StudentCabinet.xaml;Pages\TeacherCabinet.xaml;
 
-True
+False
 

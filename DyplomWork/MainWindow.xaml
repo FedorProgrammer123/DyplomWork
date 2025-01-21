@@ -15,6 +15,6 @@
             <TextBlock Text="Приложение для тестирования и проверки знаний + учёта посещаемости студентов" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             <Image Source="Resources/graduation-hat.png" HorizontalAlignment="Left"></Image>
         </Grid>
-        <Frame x:Name="MainFrame" Grid.Row="1"></Frame>
+        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 </Window>

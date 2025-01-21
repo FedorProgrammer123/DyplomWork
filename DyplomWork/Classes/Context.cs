@@ -12,6 +12,7 @@ namespace DyplomWork.Classes
         public static Context context;
         public DbSet<Users> Users { get; set; }
         public static Roles usersrole { get; set; }
+        public DbSet<Test> test { get; set; }
         public static Context GetContext()
         {
             if(context == null)
