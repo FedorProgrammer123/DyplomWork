@@ -50,7 +50,7 @@ namespace DyplomWork.Pages
                     {
                         case 1:
                             MessageBox.Show("Добро пожаловать, администратор");
-                            Manager.MainFrame.Navigate(new Pages.AdminCabinet());
+                            Manager.MainFrame.Navigate(new Pages.AdminCabinet(ExixstsUser.firstName,ExixstsUser.lastName));
                             break;
                         case 2:
                             MessageBox.Show("Добро пожаловать, преподаватель");

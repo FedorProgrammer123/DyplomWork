@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DyplomWork.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,21 @@ namespace DyplomWork.Pages
     /// </summary>
     public partial class AdminCabinet : Page
     {
-        public AdminCabinet()
+        public AdminCabinet(string userfemale,string username)
         {
             InitializeComponent();
+            ShowFemale.Text = userfemale;
+            ShowName.Text = username;
+        }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new Pages.Autorization());
+        }
+
+        private void AddUser_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new Pages.AddUser());
         }
     }
 }
