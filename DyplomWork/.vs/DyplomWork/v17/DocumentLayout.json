@@ -1,26 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\",
+  "WorkspaceRootPath": "E:\\Fashion\\DyplomWork\\DyplomWork\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\pages\\adduser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:pages\\adduser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\pages\\admincabinet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:pages\\admincabinet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\classes\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:classes\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|d:\\c# projects\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\dyplomwork\\dyplomwork\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\pages\\studentcabinet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|e:\\fashion\\dyplomwork\\dyplomwork\\pages\\studentcabinet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:pages\\studentcabinet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|E:\\Fashion\\DyplomWork\\DyplomWork\\pages\\autorization.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:pages\\autorization.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,68 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-27T23:03:47.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AddUser.xaml",
-              "DocumentMoniker": "D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\Pages\\AddUser.xaml",
-              "RelativeDocumentMoniker": "Pages\\AddUser.xaml",
-              "ToolTip": "D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\Pages\\AddUser.xaml",
-              "RelativeToolTip": "Pages\\AddUser.xaml",
+              "Title": "StudentCabinet.xaml",
+              "DocumentMoniker": "E:\\Fashion\\DyplomWork\\DyplomWork\\Pages\\StudentCabinet.xaml",
+              "RelativeDocumentMoniker": "Pages\\StudentCabinet.xaml",
+              "ToolTip": "E:\\Fashion\\DyplomWork\\DyplomWork\\Pages\\StudentCabinet.xaml",
+              "RelativeToolTip": "Pages\\StudentCabinet.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-27T20:04:06.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Context.cs",
-              "DocumentMoniker": "D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\Classes\\Context.cs",
-              "RelativeDocumentMoniker": "Classes\\Context.cs",
-              "ToolTip": "D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\Classes\\Context.cs",
-              "RelativeToolTip": "Classes\\Context.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T21:20:17.026Z",
+              "WhenOpened": "2025-03-30T22:18:35.046Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AdminCabinet.xaml",
-              "DocumentMoniker": "D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\Pages\\AdminCabinet.xaml",
-              "RelativeDocumentMoniker": "Pages\\AdminCabinet.xaml",
-              "ToolTip": "D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\Pages\\AdminCabinet.xaml",
-              "RelativeToolTip": "Pages\\AdminCabinet.xaml",
+              "Title": "Autorization.xaml",
+              "DocumentMoniker": "E:\\Fashion\\DyplomWork\\DyplomWork\\Pages\\Autorization.xaml",
+              "RelativeDocumentMoniker": "Pages\\Autorization.xaml",
+              "ToolTip": "E:\\Fashion\\DyplomWork\\DyplomWork\\Pages\\Autorization.xaml",
+              "RelativeToolTip": "Pages\\Autorization.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-27T19:14:07.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StudentCabinet.xaml",
-              "DocumentMoniker": "D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\Pages\\StudentCabinet.xaml",
-              "RelativeDocumentMoniker": "Pages\\StudentCabinet.xaml",
-              "ToolTip": "D:\\C# Projects\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\DyplomWork\\DyplomWork\\Pages\\StudentCabinet.xaml",
-              "RelativeToolTip": "Pages\\StudentCabinet.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-20T21:33:31.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T22:00:34.823Z"
             }
           ]
         }

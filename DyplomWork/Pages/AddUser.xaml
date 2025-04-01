@@ -33,7 +33,7 @@
                 <TextBlock Text="Роль:"></TextBlock>
                 <ComboBox Name="SelectRoleBox" DisplayMemberPath="Role"></ComboBox>
                 <Button Content="Добавить" Name="Add"></Button>
-                <Button Content="Выйти" Width="200" Height="80" Click="Button_Click"></Button>
+                <Button Content="Выйти" Width="200" Height="46" Click="Button_Click"></Button>
             </StackPanel>
             
         </Grid>

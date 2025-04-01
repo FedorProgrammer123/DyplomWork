@@ -49,14 +49,20 @@ namespace DyplomWork.Pages
                     switch (ExistsRole.Role)
                     {
                         case 1:
+                            CurrentUser.UserEmail = login;
+                            CurrentUser.UserPassword = password;
                             MessageBox.Show("Добро пожаловать, администратор");
                             Manager.MainFrame.Navigate(new Pages.AdminCabinet(ExixstsUser.firstName,ExixstsUser.lastName));
                             break;
                         case 2:
+                            CurrentUser.UserEmail = login;
+                            CurrentUser.UserPassword = password;
                             MessageBox.Show("Добро пожаловать, преподаватель");
                             Manager.MainFrame.Navigate(new Pages.TeacherCabinet());
                             break;
                         case 3:
+                            CurrentUser.UserEmail = login;
+                            CurrentUser.UserPassword = password;
                             MessageBox.Show("Добро пожаловать, студент");
                             Manager.MainFrame.Navigate(new Pages.StudentCabinet(ExixstsUser.firstName,ExixstsUser.lastName));
                             break;

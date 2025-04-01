@@ -37,5 +37,10 @@ namespace DyplomWork.Pages
         {
             Manager.MainFrame.Navigate(new Pages.AddUser());
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new Pages.ShowUsers());
+        }
     }
 }
