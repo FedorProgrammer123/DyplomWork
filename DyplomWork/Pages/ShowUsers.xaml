@@ -17,6 +17,33 @@
         <Grid Grid.Row="0">
             <TextBlock Text="Кабинет администратора" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"></TextBlock>
         </Grid>
+        <Grid Grid.Row="1">
+            <ListView x:Name="ShowUsersList">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <TextBlock>
+                                <Run Text="ID:"></Run>
+                                <Run Text="{Binding studentId}"></Run>
+                            </TextBlock>
+                            <TextBlock>
+                                <Run Text="ФИО:"></Run>
+                                <Run Text="{Binding firstName}"></Run>
+                                <Run Text="{Binding lastName}"></Run>
+                            </TextBlock>
+                            <TextBlock>
+                                <Run Text="Email:"></Run>
+                                <Run Text="{Binding email}"></Run>
+                            </TextBlock>
+                            <TextBlock>
+                                <Run Text="Пароль:"></Run>
+                                <Run Text="{Binding password}"></Run>
+                            </TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
         <Grid Grid.Row="2">
             <Button Content="Выйти" Click="Button_Click"></Button>
         </Grid>

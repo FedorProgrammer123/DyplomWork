@@ -24,6 +24,7 @@ namespace DyplomWork.Pages
         public ShowUsers()
         {
             InitializeComponent();
+            ShowUsersList.ItemsSource = Classes.Context.GetContext().Users.ToList();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

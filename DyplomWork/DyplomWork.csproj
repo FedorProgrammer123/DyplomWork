@@ -383,6 +383,15 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\image12.jpg" />
+    <Resource Include="Resources\image4.jpg" />
+    <Resource Include="Resources\image3.jpg" />
+    <Resource Include="Resources\image2.jpg" />
+    <Resource Include="Resources\image1.jpg" />
+    <None Include="Resources\Resource1.jpg" />
+    <None Include="Resources\Resource2.jpg" />
+    <None Include="Resources\Resource3.jpg" />
+    <None Include="Resources\Resource4.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

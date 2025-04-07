@@ -29,7 +29,7 @@ namespace DyplomWork.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new Autorization());
+            Manager.MainFrame.Navigate(new AdminCabinet(Classes.CurrentUser.UserEmail,Classes.CurrentUser.UserPassword));
         }
     }
 }

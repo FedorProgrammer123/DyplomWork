@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\Fashion\\DyplomWork\\DyplomWork\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|e:\\fashion\\dyplomwork\\dyplomwork\\pages\\studentcabinet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:pages\\studentcabinet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|E:\\Fashion\\DyplomWork\\DyplomWork\\pages\\autorization.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:pages\\autorization.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|e:\\fashion\\dyplomwork\\dyplomwork\\pages\\autorization.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:pages\\autorization.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StudentCabinet.xaml",
-              "DocumentMoniker": "E:\\Fashion\\DyplomWork\\DyplomWork\\Pages\\StudentCabinet.xaml",
-              "RelativeDocumentMoniker": "Pages\\StudentCabinet.xaml",
-              "ToolTip": "E:\\Fashion\\DyplomWork\\DyplomWork\\Pages\\StudentCabinet.xaml",
-              "RelativeToolTip": "Pages\\StudentCabinet.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-30T22:18:35.046Z",
+              "DocumentIndex": 1,
+              "Title": "Autorization.xaml.cs",
+              "DocumentMoniker": "E:\\Fashion\\DyplomWork\\DyplomWork\\Pages\\Autorization.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\Autorization.xaml.cs",
+              "ToolTip": "E:\\Fashion\\DyplomWork\\DyplomWork\\Pages\\Autorization.xaml.cs",
+              "RelativeToolTip": "Pages\\Autorization.xaml.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA3wDEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T10:51:18.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Autorization.xaml",
               "DocumentMoniker": "E:\\Fashion\\DyplomWork\\DyplomWork\\Pages\\Autorization.xaml",
               "RelativeDocumentMoniker": "Pages\\Autorization.xaml",
               "ToolTip": "E:\\Fashion\\DyplomWork\\DyplomWork\\Pages\\Autorization.xaml",
               "RelativeToolTip": "Pages\\Autorization.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-30T22:00:34.823Z"
+              "WhenOpened": "2025-04-03T18:12:34.126Z",
+              "EditorCaption": ""
             }
           ]
         }
