@@ -39,9 +39,6 @@
                         </ImageBrush>
                     </TextBox.Background>
                 </TextBox>
-                <TextBox x:Name="CaptchaWriteBox" Width="100" Margin="10" Visibility="Collapsed"></TextBox>
-                <Button x:Name="GuestButton" Content="Гость"
-                    Click="GuestButton_Click" Margin="10" Visibility="Visible"></Button>
             </StackPanel>
         </Grid>
     </Grid>

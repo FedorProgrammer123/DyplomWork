@@ -25,14 +25,14 @@
                 <TextBlock Text="Email:"></TextBlock>
                 <TextBox Name="EnterEmailBox"></TextBox>
                 <TextBlock Text="Password:"></TextBlock>
-                <TextBox Name="EnterPasswordBox"></TextBox>
+                <PasswordBox Name="EnterPasswordBox"></PasswordBox>
                 <TextBlock Text="Номер группы:"></TextBlock>
-                <TextBox Name="EnterGroupNumberBox"></TextBox>
+                <ComboBox Name="EnterGroupNumberBox" DisplayMemberPath="groupNumber"></ComboBox>
                 <TextBlock Text="Курс:"></TextBlock>
-                <TextBox Name="EnterCourseBox"></TextBox>
+                <ComboBox Name="EnterCourseBox" DisplayMemberPath="courseYear"></ComboBox>
                 <TextBlock Text="Роль:"></TextBlock>
-                <ComboBox Name="SelectRoleBox" DisplayMemberPath="Role"></ComboBox>
-                <Button Content="Добавить" Name="Add"></Button>
+                <ComboBox Name="SelectRoleBox" DisplayMemberPath="Role" SelectedValuePath="IDRole"></ComboBox>
+                <Button Content="Добавить" Name="Add" Click="Add_Click"></Button>
                 <Button Content="Выйти" Width="200" Height="46" Click="Button_Click"></Button>
             </StackPanel>
             

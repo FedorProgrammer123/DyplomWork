@@ -12,7 +12,7 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Background="#7dc408">
-            <TextBlock Text="Приложение для тестирования и проверки знаний + учёта посещаемости студентов" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBlock Text="Приложение для тестирования и проверки знаний + учёта посещаемости студентов" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20 0 0 0"></TextBlock>
             <Image Source="Resources/graduation-hat.png" HorizontalAlignment="Left" Margin="20 0 0 0"></Image>
         </Grid>
         <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>

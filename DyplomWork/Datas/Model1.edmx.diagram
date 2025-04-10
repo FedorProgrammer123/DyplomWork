@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="f5c1a1d61c5c4f0cb293b511687e0928" Name="Diagram1">
+      <Diagram DiagramId="75806f5c4e4f40fdb4cde76cf4c63daf" Name="Diagram1">
         <EntityTypeShape EntityType="DyplomWorkModel.AnswerOption" Width="1.5" PointX="15" PointY="4.625" IsExpanded="true" />
         <EntityTypeShape EntityType="DyplomWorkModel.Attendance" Width="1.5" PointX="9.75" PointY="8.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DyplomWorkModel.CorrectAnswer" Width="1.5" PointX="12.75" PointY="8" IsExpanded="true" />
@@ -13,7 +13,6 @@
         <EntityTypeShape EntityType="DyplomWorkModel.Question" Width="1.5" PointX="12.75" PointY="4.625" IsExpanded="true" />
         <EntityTypeShape EntityType="DyplomWorkModel.Roles" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
         <EntityTypeShape EntityType="DyplomWorkModel.StudentAnswer" Width="1.5" PointX="17.25" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DyplomWorkModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DyplomWorkModel.Test" Width="1.5" PointX="10.5" PointY="4.25" IsExpanded="true" />
         <EntityTypeShape EntityType="DyplomWorkModel.TestResult" Width="1.5" PointX="12.75" PointY="1.625" IsExpanded="true" />
         <EntityTypeShape EntityType="DyplomWorkModel.TitleTest" Width="1.5" PointX="8.25" PointY="2" IsExpanded="true" />

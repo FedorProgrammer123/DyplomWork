@@ -13,10 +13,10 @@ namespace DyplomWork.Datas
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DyplomWorkEntities : DbContext
+    public partial class DyplomWorkEntities1 : DbContext
     {
-        public DyplomWorkEntities()
-            : base("name=DyplomWorkEntities")
+        public DyplomWorkEntities1()
+            : base("name=DyplomWorkEntities1")
         {
         }
     
@@ -33,7 +33,6 @@ namespace DyplomWork.Datas
         public virtual DbSet<Question> Question { get; set; }
         public virtual DbSet<Roles> Roles { get; set; }
         public virtual DbSet<StudentAnswer> StudentAnswer { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Test> Test { get; set; }
         public virtual DbSet<TestResult> TestResult { get; set; }
         public virtual DbSet<TitleTest> TitleTest { get; set; }

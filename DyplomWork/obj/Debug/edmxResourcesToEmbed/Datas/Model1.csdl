@@ -87,16 +87,6 @@
     <Property Name="answerOptionId" Type="Int32" Nullable="false" />
     <NavigationProperty Name="AnswerOption" Relationship="Self.FK_StudentAnswer_AnswerOption" FromRole="StudentAnswer" ToRole="AnswerOption" />
   </EntityType>
-  <EntityType Name="sysdiagrams">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="principal_id" Type="Int32" Nullable="false" />
-    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="Int32" />
-    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
-  </EntityType>
   <EntityType Name="Test">
     <Key>
       <PropertyRef Name="testId" />
@@ -312,7 +302,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="DyplomWorkEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="DyplomWorkEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="AnswerOption" EntityType="Self.AnswerOption" />
     <EntitySet Name="Attendance" EntityType="Self.Attendance" />
     <EntitySet Name="CorrectAnswer" EntityType="Self.CorrectAnswer" />
@@ -321,7 +311,6 @@
     <EntitySet Name="Question" EntityType="Self.Question" />
     <EntitySet Name="Roles" EntityType="Self.Roles" />
     <EntitySet Name="StudentAnswer" EntityType="Self.StudentAnswer" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
     <EntitySet Name="Test" EntityType="Self.Test" />
     <EntitySet Name="TestResult" EntityType="Self.TestResult" />
     <EntitySet Name="TitleTest" EntityType="Self.TitleTest" />
