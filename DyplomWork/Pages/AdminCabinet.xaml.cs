@@ -1,4 +1,5 @@
 ﻿using DyplomWork.Classes;
+using DyplomWork.Datas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,5 +43,35 @@ namespace DyplomWork.Pages
         {
             Manager.MainFrame.Navigate(new Pages.ShowUsers());
         }
+
+        private void DeleteUserButton_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                // Получаем ID из текстового поля
+                int id = int.Parse(DeleteUser.Text);
+
+                // Удаляем пользователя с указанным ID
+                var userToRemove = Classes.Context.GetContext().Users.FirstOrDefault(u => u.studentId == id);
+                if (userToRemove != null)
+                {
+                    Classes.Context.GetContext().Users.Remove(userToRemove);
+                    MessageBox.Show($"Пользователь с ID {id} удалён.");
+                    Classes.Context.GetContext().SaveChanges();
+                }
+                else
+                {
+                    MessageBox.Show($"Пользователь с ID {id} не найден.");
+                }
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Необходимо ввести корректный ID.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при удалении пользователя: {ex.Message}");
+            }
+        }
     }
-}
+    }
