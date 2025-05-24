@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Fashion\\DyplomWork\\DyplomWork\\",
+  "WorkspaceRootPath": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|e:\\fashion\\dyplomwork\\dyplomwork\\pages\\admincabinet.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|c:\\users\\fedor\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\dyplomwork\\dyplomwork\\pages\\admincabinet.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:pages\\admincabinet.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|E:\\Fashion\\DyplomWork\\DyplomWork\\pages\\admincabinet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\pages\\admincabinet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:pages\\admincabinet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|E:\\Fashion\\DyplomWork\\DyplomWork\\pages\\adduser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\pages\\adduser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:pages\\adduser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,9 +28,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "AdminCabinet.xaml",
-              "DocumentMoniker": "E:\\Fashion\\DyplomWork\\DyplomWork\\Pages\\AdminCabinet.xaml",
+              "DocumentMoniker": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\Pages\\AdminCabinet.xaml",
               "RelativeDocumentMoniker": "Pages\\AdminCabinet.xaml",
-              "ToolTip": "E:\\Fashion\\DyplomWork\\DyplomWork\\Pages\\AdminCabinet.xaml",
+              "ToolTip": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\Pages\\AdminCabinet.xaml",
               "RelativeToolTip": "Pages\\AdminCabinet.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-11T18:25:28.182Z"
@@ -39,11 +39,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AdminCabinet.xaml.cs",
-              "DocumentMoniker": "E:\\Fashion\\DyplomWork\\DyplomWork\\Pages\\AdminCabinet.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\Pages\\AdminCabinet.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\AdminCabinet.xaml.cs",
-              "ToolTip": "E:\\Fashion\\DyplomWork\\DyplomWork\\Pages\\AdminCabinet.xaml.cs",
+              "ToolTip": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\Pages\\AdminCabinet.xaml.cs",
               "RelativeToolTip": "Pages\\AdminCabinet.xaml.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAA+wDsAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAqwDEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T18:26:49.939Z",
               "EditorCaption": ""
@@ -52,9 +52,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "AddUser.xaml.cs",
-              "DocumentMoniker": "E:\\Fashion\\DyplomWork\\DyplomWork\\Pages\\AddUser.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\Pages\\AddUser.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\AddUser.xaml.cs",
-              "ToolTip": "E:\\Fashion\\DyplomWork\\DyplomWork\\Pages\\AddUser.xaml.cs",
+              "ToolTip": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\Pages\\AddUser.xaml.cs",
               "RelativeToolTip": "Pages\\AddUser.xaml.cs",
               "ViewState": "AgIAADsAAAAAAAAAAIA1wEwAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

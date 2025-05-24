@@ -59,7 +59,7 @@ namespace DyplomWork.Pages
                             CurrentUser.UserEmail = login;
                             CurrentUser.UserPassword = password;
                             MessageBox.Show("Добро пожаловать, преподаватель", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-                            Manager.MainFrame.Navigate(new Pages.TeacherCabinet());
+                            Manager.MainFrame.Navigate(new Pages.TeacherCabinet(ExixstsUser.firstName, ExixstsUser.lastName));
                             break;
                         case 3:
                             CurrentUser.UserEmail = login;
