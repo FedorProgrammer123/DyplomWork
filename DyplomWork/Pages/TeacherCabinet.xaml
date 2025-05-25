@@ -20,7 +20,7 @@
             <TextBlock Text="{Binding firstName}" Name="ShowFemale" Margin="60 0 0 0"></TextBlock>
             <TextBlock Text="{Binding lastName}" Name="ShowName"></TextBlock>
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock Text="ID студента/преподавателя:"></TextBlock>
+                <TextBlock Text="ID студента:"></TextBlock>
                 <TextBox Name="DeleteUser" Margin="0 10 0 0"></TextBox>
                 <Button Content="Delete" Margin="0 10 0 0" Name="DeleteUserButton" Click="DeleteUserButton_Click"></Button>
                 <Button Content="Добавить студента" Margin="0 10 0 0" Name="AddUser" Click="AddUser_Click"></Button>
