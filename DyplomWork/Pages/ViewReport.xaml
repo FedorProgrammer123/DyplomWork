@@ -1,0 +1,46 @@
+﻿<Page x:Class="DyplomWork.Pages.ViewReport"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DyplomWork.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="750" d:DesignWidth="800"
+      Title="ViewReport">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <TextBlock Text="Посмотреть отсчёт" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"></TextBlock>
+        </Grid>
+        <Grid Grid.Row="1">
+            <ListView x:Name="ShowReport">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Image Stretch="UniformToFill" Width="200">
+                                <Image.Source>
+                                    <Binding Path="TestScreen">
+                                        <Binding.TargetNullValue>
+                                            <BitmapImage UriSource="/Resources/image1.jpg"></BitmapImage>
+                                        </Binding.TargetNullValue>
+                                    </Binding>
+                                </Image.Source>
+                            </Image>
+                            <TextBlock Text="{Binding Female}"></TextBlock>
+                            <TextBlock Text="{Binding Name}"></TextBlock>
+                            <TextBlock Text="{Binding TitleTest.test}"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Button Content="Выйти" Click="Button_Click"></Button>
+        </Grid>
+    </Grid>
+</Page>

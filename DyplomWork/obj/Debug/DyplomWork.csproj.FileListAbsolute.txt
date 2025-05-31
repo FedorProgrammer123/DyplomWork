@@ -761,3 +761,7 @@ C:\Users\Fedor\OneDrive\Рабочий стол\DyplomWork\DyplomWork\DyplomWork
 C:\Users\Fedor\OneDrive\Рабочий стол\DyplomWork\DyplomWork\DyplomWork\obj\Debug\DyplomWork.csproj.Up2Date
 C:\Users\Fedor\OneDrive\Рабочий стол\DyplomWork\DyplomWork\DyplomWork\obj\Debug\DyplomWork.exe
 C:\Users\Fedor\OneDrive\Рабочий стол\DyplomWork\DyplomWork\DyplomWork\obj\Debug\DyplomWork.pdb
+C:\Users\Fedor\OneDrive\Рабочий стол\DyplomWork\DyplomWork\DyplomWork\obj\Debug\Pages\ViewReport.g.cs
+C:\Users\Fedor\OneDrive\Рабочий стол\DyplomWork\DyplomWork\DyplomWork\obj\Debug\Pages\ViewReport.baml
+C:\Users\Fedor\OneDrive\Рабочий стол\DyplomWork\DyplomWork\DyplomWork\obj\Debug\Pages\ShowStudents.g.cs
+C:\Users\Fedor\OneDrive\Рабочий стол\DyplomWork\DyplomWork\DyplomWork\obj\Debug\Pages\ShowStudents.baml

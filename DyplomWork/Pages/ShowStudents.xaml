@@ -1,0 +1,51 @@
+﻿<Page x:Class="DyplomWork.Pages.ShowStudents"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DyplomWork.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="750" d:DesignWidth="800"
+      Title="ShowStudents">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <TextBlock Text="Кабинет администратора" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"></TextBlock>
+        </Grid>
+        <Grid Grid.Row="1">
+            <ListView x:Name="ShowUsersList">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <TextBlock>
+                            <Run Text="ID:"></Run>
+                            <Run Text="{Binding studentId}"></Run>
+                            </TextBlock>
+                            <TextBlock>
+                            <Run Text="ФИО:"></Run>
+                            <Run Text="{Binding firstName}"></Run>
+                            <Run Text="{Binding lastName}"></Run>
+                            </TextBlock>
+                            <TextBlock>
+                            <Run Text="Email:"></Run>
+                            <Run Text="{Binding email}"></Run>
+                            </TextBlock>
+                            <TextBlock>
+                            <Run Text="Пароль:"></Run>
+                            <Run Text="{Binding password}"></Run>
+                            </TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Button Content="Выйти" Name="ExitButton"></Button>
+        </Grid>
+    </Grid>
+</Page>

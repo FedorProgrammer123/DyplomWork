@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DyplomWork.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="750" d:DesignWidth="800"
       Title="TeacherCabinet">
 
     <Grid>
@@ -24,8 +24,9 @@
                 <TextBox Name="DeleteUser" Margin="0 10 0 0"></TextBox>
                 <Button Content="Delete" Margin="0 10 0 0" Name="DeleteUserButton" Click="DeleteUserButton_Click"></Button>
                 <Button Content="Добавить студента" Margin="0 10 0 0" Name="AddUser" Click="AddUser_Click"></Button>
-                <Button Content="Посмотреть список пользователей" Margin="0 10 0 0" Click="Button_Click"></Button>
+                <Button Content="Посмотреть список пользователей" Name="ShowUserList" Margin="0 10 0 0" Click="ShowUserList_Click"></Button>
                 <Button Content="Добавить тест" Margin="0 10 0 0" Click="Button_Click"></Button>
+                <Button Content="Посмотреть отсчёт" Name="ShowReport" Margin="0 10 0 0" Click="ShowReport_Click"></Button>
                 <Button Content="Выйти" Name="ExitButton" Margin="0 10 0 0" Click="ExitButton_Click"></Button>
             </StackPanel>
         </Grid>

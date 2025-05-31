@@ -70,5 +70,15 @@ namespace DyplomWork.Pages
                 MessageBox.Show("Ошибка в базе", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+        private void ShowReport_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Pages.ViewReport());
+        }
+
+        private void ShowUserList_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Pages.ShowStudents());
+        }
     }
 }
