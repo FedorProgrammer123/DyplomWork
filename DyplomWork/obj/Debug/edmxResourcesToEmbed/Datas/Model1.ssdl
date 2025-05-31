@@ -72,6 +72,16 @@
     <Property Name="questionId" Type="int" Nullable="false" />
     <Property Name="answerOptionId" Type="int" Nullable="false" />
   </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
   <EntityType Name="Test">
     <Key>
       <PropertyRef Name="testId" />
@@ -82,6 +92,18 @@
     <Property Name="maxScore" Type="int" Nullable="false" />
     <Property Name="time_limit" Type="time" Precision="7" Nullable="false" />
     <Property Name="courseId" Type="int" Nullable="false" />
+    <Property Name="Href" Type="text" />
+    <Property Name="Mark" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TestReport">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Female" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="TitleTestID" Type="int" Nullable="false" />
+    <Property Name="TestScreen" Type="image" Nullable="false" />
   </EntityType>
   <EntityType Name="TestResult">
     <Key>
@@ -240,6 +262,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_TestReport_TitleTest">
+    <End Role="TitleTest" Type="Self.TitleTest" Multiplicity="1" />
+    <End Role="TestReport" Type="Self.TestReport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TitleTest">
+        <PropertyRef Name="IDTitle" />
+      </Principal>
+      <Dependent Role="TestReport">
+        <PropertyRef Name="TitleTestID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_TestResult_Test">
     <End Role="Test" Type="Self.Test" Multiplicity="1" />
     <End Role="TestResult" Type="Self.TestResult" Multiplicity="*" />
@@ -285,7 +319,9 @@
     <EntitySet Name="Question" EntityType="Self.Question" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="StudentAnswer" EntityType="Self.StudentAnswer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Test" EntityType="Self.Test" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TestReport" EntityType="Self.TestReport" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TestResult" EntityType="Self.TestResult" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TitleTest" EntityType="Self.TitleTest" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Topic" EntityType="Self.Topic" Schema="dbo" store:Type="Tables" />
@@ -329,6 +365,10 @@
     <AssociationSet Name="FK_Test_TitleTest" Association="Self.FK_Test_TitleTest">
       <End Role="TitleTest" EntitySet="TitleTest" />
       <End Role="Test" EntitySet="Test" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestReport_TitleTest" Association="Self.FK_TestReport_TitleTest">
+      <End Role="TitleTest" EntitySet="TitleTest" />
+      <End Role="TestReport" EntitySet="TestReport" />
     </AssociationSet>
     <AssociationSet Name="FK_TestResult_Test" Association="Self.FK_TestResult_Test">
       <End Role="Test" EntitySet="Test" />

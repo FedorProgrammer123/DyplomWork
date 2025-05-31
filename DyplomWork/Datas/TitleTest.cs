@@ -18,6 +18,7 @@ namespace DyplomWork.Datas
         public TitleTest()
         {
             this.Test = new HashSet<Test>();
+            this.TestReport = new HashSet<TestReport>();
         }
     
         public int IDTitle { get; set; }
@@ -25,5 +26,7 @@ namespace DyplomWork.Datas
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Test> Test { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TestReport> TestReport { get; set; }
     }
 }

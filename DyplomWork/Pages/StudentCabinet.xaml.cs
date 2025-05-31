@@ -32,5 +32,10 @@ namespace DyplomWork.Pages
         {
             Classes.Manager.MainFrame.Navigate(new Autorization());
         }
+
+        private void GoToAddReport_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new AddTestReport());
+        }
     }
 }

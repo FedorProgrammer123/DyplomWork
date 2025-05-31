@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Fedor\OneDrive\Рабочий стол\DyplomWork\DyplomWork\obj\Debug\
+C:\Users\Fedor\OneDrive\Рабочий стол\DyplomWork\DyplomWork\DyplomWork\obj\Debug\
 DyplomWork
 none
 false
 DEBUG;TRACE
-C:\Users\Fedor\OneDrive\Рабочий стол\DyplomWork\DyplomWork\App.xaml
-91980404268
+C:\Users\Fedor\OneDrive\Рабочий стол\DyplomWork\DyplomWork\DyplomWork\App.xaml
+1066071371
 2-1747602707
-32-1314751081
-72906128219
-MainWindow.xaml;Pages\AddStudent.xaml;Pages\AddTest.xaml;Pages\AddUser.xaml;Pages\AdminCabinet.xaml;Pages\Autorization.xaml;Pages\ShowUsers.xaml;Pages\StudentCabinet.xaml;Pages\TeacherCabinet.xaml;
+351813253041
+721811879403
+MainWindow.xaml;Pages\AddStudent.xaml;Pages\AddTest.xaml;Pages\AddTestReport.xaml;Pages\AddUser.xaml;Pages\AdminCabinet.xaml;Pages\Autorization.xaml;Pages\ShowUsers.xaml;Pages\StudentCabinet.xaml;Pages\TeacherCabinet.xaml;
 
 False
 

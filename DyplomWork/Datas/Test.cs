@@ -27,6 +27,8 @@ namespace DyplomWork.Datas
         public int maxScore { get; set; }
         public System.TimeSpan time_limit { get; set; }
         public int courseId { get; set; }
+        public string Href { get; set; }
+        public string Mark { get; set; }
     
         public virtual Course Course { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

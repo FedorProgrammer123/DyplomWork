@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\",
+  "WorkspaceRootPath": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\DyplomWork\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|c:\\users\\fedor\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\dyplomwork\\dyplomwork\\pages\\addstudent.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:pages\\addstudent.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|c:\\users\\fedor\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\dyplomwork\\dyplomwork\\dyplomwork\\pages\\addtestreport.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:pages\\addtestreport.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\pages\\teachercabinet.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:pages\\teachercabinet.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|c:\\users\\fedor\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\dyplomwork\\dyplomwork\\dyplomwork\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\pages\\studentcabinet.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:pages\\studentcabinet.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|c:\\users\\fedor\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\dyplomwork\\dyplomwork\\dyplomwork\\pages\\addtestreport.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5EC27B78-2651-401A-9A3E-349397969BE2}|DyplomWork.csproj|solutionrelative:pages\\addtestreport.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,44 +22,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\DyplomWork\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\DyplomWork\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T15:56:40.159Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AddStudent.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\Pages\\AddStudent.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\AddStudent.xaml.cs",
-              "ToolTip": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\Pages\\AddStudent.xaml.cs",
-              "RelativeToolTip": "Pages\\AddStudent.xaml.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAIwDoAAAAcAAAAAAAAAA==",
+              "Title": "AddTestReport.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\DyplomWork\\Pages\\AddTestReport.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AddTestReport.xaml.cs",
+              "ToolTip": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\DyplomWork\\Pages\\AddTestReport.xaml.cs",
+              "RelativeToolTip": "Pages\\AddTestReport.xaml.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAIwHEAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T20:04:03.104Z",
+              "WhenOpened": "2025-05-31T15:56:09.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "StudentCabinet.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\Pages\\StudentCabinet.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\StudentCabinet.xaml.cs",
-              "ToolTip": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\Pages\\StudentCabinet.xaml.cs",
-              "RelativeToolTip": "Pages\\StudentCabinet.xaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T19:55:56.719Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TeacherCabinet.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\Pages\\TeacherCabinet.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\TeacherCabinet.xaml.cs",
-              "ToolTip": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\Pages\\TeacherCabinet.xaml.cs",
-              "RelativeToolTip": "Pages\\TeacherCabinet.xaml.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAxwCYAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T21:50:32.48Z"
+              "Title": "AddTestReport.xaml",
+              "DocumentMoniker": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\DyplomWork\\Pages\\AddTestReport.xaml",
+              "RelativeDocumentMoniker": "Pages\\AddTestReport.xaml",
+              "ToolTip": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\DyplomWork\\DyplomWork\\DyplomWork\\Pages\\AddTestReport.xaml",
+              "RelativeToolTip": "Pages\\AddTestReport.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-31T15:34:57.901Z",
+              "EditorCaption": ""
             }
           ]
         }

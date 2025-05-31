@@ -16,10 +16,18 @@ namespace DyplomWork.Datas
     public partial class DyplomWorkEntities1 : DbContext
     {
         public DyplomWorkEntities1()
-            : base("name=DyplomWorkEntities1")
+            : base("name=DyplomWorkEntities")
         {
         }
-    
+        private static DyplomWorkEntities1 context;
+        public static DyplomWorkEntities1 GetContext()
+        {
+            if (context == null)
+            {
+                context = new DyplomWorkEntities1();
+            }
+            return context;
+        }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
@@ -33,7 +41,9 @@ namespace DyplomWork.Datas
         public virtual DbSet<Question> Question { get; set; }
         public virtual DbSet<Roles> Roles { get; set; }
         public virtual DbSet<StudentAnswer> StudentAnswer { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Test> Test { get; set; }
+        public virtual DbSet<TestReport> TestReport { get; set; }
         public virtual DbSet<TestResult> TestResult { get; set; }
         public virtual DbSet<TitleTest> TitleTest { get; set; }
         public virtual DbSet<Topic> Topic { get; set; }
