@@ -15,7 +15,7 @@
             <RowDefinition Height="40"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
-            <TextBlock Text="Кабинет администратора" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"></TextBlock>
+            <TextBlock Text="Просмотр студентов" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"></TextBlock>
         </Grid>
         <Grid Grid.Row="1">
             <ListView x:Name="ShowUsersList">
@@ -45,7 +45,7 @@
             </ListView>
         </Grid>
         <Grid Grid.Row="2">
-            <Button Content="Выйти" Name="ExitButton"></Button>
+            <Button Content="Выйти" Name="ExitButton" Click="ExitButton_Click"></Button>
         </Grid>
     </Grid>
 </Page>

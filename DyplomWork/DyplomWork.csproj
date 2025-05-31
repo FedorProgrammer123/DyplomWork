@@ -318,6 +318,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\EditReport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ShowReportStudentVersion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\ShowStudents.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -357,6 +365,12 @@
     </Compile>
     <Compile Include="Pages\Autorization.xaml.cs">
       <DependentUpon>Autorization.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditReport.xaml.cs">
+      <DependentUpon>EditReport.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ShowReportStudentVersion.xaml.cs">
+      <DependentUpon>ShowReportStudentVersion.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ShowStudents.xaml.cs">
       <DependentUpon>ShowStudents.xaml</DependentUpon>

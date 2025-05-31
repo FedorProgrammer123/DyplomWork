@@ -48,6 +48,7 @@
             <WrapPanel HorizontalAlignment="Left" Orientation="Horizontal">
                 <Button Content="Выйти" Name="ExitButton" Click="ExitButton_Click" HorizontalAlignment="Left" Width="200"></Button>
                 <Button Content="Добавить отсчёт о тестировании" Name="GoToAddReport" HorizontalAlignment="Right" Margin="20 0 0 0" Click="GoToAddReport_Click"></Button>
+                <Button Content="Посмотреть отсчёт" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20 0 0 0" Click="Button_Click"></Button>
             </WrapPanel>
             
         </Grid>

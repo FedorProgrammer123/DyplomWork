@@ -37,5 +37,10 @@ namespace DyplomWork.Pages
         {
             Classes.Manager.MainFrame.Navigate(new AddTestReport());
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new ShowReportStudentVersion());
+        }
     }
 }

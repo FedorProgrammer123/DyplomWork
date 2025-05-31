@@ -25,5 +25,10 @@ namespace DyplomWork.Pages
             InitializeComponent();
             ShowUsersList.ItemsSource = Datas.DyplomWorkEntities1.GetContext().Users.Where(u => u.Role == 3).ToList();
         }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Pages.TeacherCabinet(Classes.CurrentUser.UserEmail,Classes.CurrentUser.UserPassword));
+        }
     }
 }

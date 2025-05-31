@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Fedor\OneDrive\Рабочий стол\DyplomWork\DyplomWork\DyplomWork\App.xaml
-121133719999
+14-1600440385
 2-1747602707
-381929367314
+40530050630
 721811879403
-MainWindow.xaml;Pages\AddStudent.xaml;Pages\AddTest.xaml;Pages\AddTestReport.xaml;Pages\AddUser.xaml;Pages\AdminCabinet.xaml;Pages\Autorization.xaml;Pages\ShowStudents.xaml;Pages\ShowUsers.xaml;Pages\StudentCabinet.xaml;Pages\TeacherCabinet.xaml;Pages\ViewReport.xaml;
+MainWindow.xaml;Pages\AddStudent.xaml;Pages\AddTest.xaml;Pages\AddTestReport.xaml;Pages\AddUser.xaml;Pages\AdminCabinet.xaml;Pages\Autorization.xaml;Pages\EditReport.xaml;Pages\ShowReportStudentVersion.xaml;Pages\ShowStudents.xaml;Pages\ShowUsers.xaml;Pages\StudentCabinet.xaml;Pages\TeacherCabinet.xaml;Pages\ViewReport.xaml;
 
 True
 

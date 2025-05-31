@@ -12,28 +12,29 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using DyplomWork.Classes;
 using DyplomWork.Datas;
 
 namespace DyplomWork.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для ViewReport.xaml
+    /// Логика взаимодействия для EditReport.xaml
     /// </summary>
-    public partial class ViewReport : Page
+    public partial class EditReport : Page
     {
-        public ViewReport()
+        public static TestReport contextTests = new TestReport();
+        public EditReport(string contextTests2)
         {
+           
             InitializeComponent();
-            ShowReport.ItemsSource = Datas.DyplomWorkEntities1.GetContext().TestReport.ToList();
+            if (contextTests2 == null)
+            {
+                
+            }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void GoBackButton_Click(object sender, RoutedEventArgs e)
         {
-
-            Classes.Manager.MainFrame.Navigate(new Pages.TeacherCabinet(Classes.CurrentUser.UserEmail, Classes.CurrentUser.UserPassword));
-
-
+            Classes.Manager.MainFrame.Navigate(new Pages.ViewReport());
         }
     }
 }
