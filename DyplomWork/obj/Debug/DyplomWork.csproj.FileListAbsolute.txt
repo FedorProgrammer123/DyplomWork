@@ -767,3 +767,5 @@ C:\Users\Fedor\OneDrive\Рабочий стол\DyplomWork\DyplomWork\DyplomWork
 C:\Users\Fedor\OneDrive\Рабочий стол\DyplomWork\DyplomWork\DyplomWork\obj\Debug\Pages\ShowStudents.baml
 C:\Users\Fedor\OneDrive\Рабочий стол\DyplomWork\DyplomWork\DyplomWork\obj\Debug\Pages\ShowReportStudentVersion.g.cs
 C:\Users\Fedor\OneDrive\Рабочий стол\DyplomWork\DyplomWork\DyplomWork\obj\Debug\Pages\ShowReportStudentVersion.baml
+C:\Users\Fedor\OneDrive\Рабочий стол\DyplomWork\DyplomWork\DyplomWork\obj\Debug\Pages\EditReport.g.cs
+C:\Users\Fedor\OneDrive\Рабочий стол\DyplomWork\DyplomWork\DyplomWork\obj\Debug\Pages\EditReport.baml

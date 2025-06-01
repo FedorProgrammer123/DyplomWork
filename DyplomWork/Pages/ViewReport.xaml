@@ -34,14 +34,19 @@
                             <TextBlock Text="{Binding Female}"></TextBlock>
                             <TextBlock Text="{Binding Name}"></TextBlock>
                             <TextBlock Text="{Binding TitleTest.title}"></TextBlock>
-                            <Button Content="Редактировать" Width="200"></Button>
+                            <Button Content="Редактировать" Name="EditReport" Width="200" Click="EditReport_Click"></Button>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
         </Grid>
         <Grid Grid.Row="2">
-            <Button Content="Выйти" Click="Button_Click"></Button>
+            <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Button Content="Выйти" Name="ExitButton" HorizontalAlignment="Left" Width="200" Click="ExitButton_Click"></Button>
+                <Button Content="Добавить" Name="GoAddButton" HorizontalAlignment="Right" VerticalAlignment="Top" Width="200" Margin="20 0 0 0" Click="GoAddButton_Click"></Button>
+                <Button Content="Удалить" Name="DeleteButton" HorizontalAlignment="Right" VerticalAlignment="Center" Width="200" Margin="20 0 0 0" Click="DeleteButton_Click"></Button>
+            </WrapPanel>
+            
         </Grid>
     </Grid>
 </Page>

@@ -25,7 +25,7 @@
                 <TextBlock Text="Фамилия:"></TextBlock>
                 <TextBox Text="{Binding Female}" x:Name="EnterFemaleBox" Width="200"></TextBox>
                 <TextBlock Text="Название теста:"></TextBlock>
-                <ComboBox Name="SelectTestBox" DisplayMemberPath="title" Width="200"></ComboBox>
+                <ComboBox SelectedItem="{Binding TitleTest.title}" Name="SelectTestBox" DisplayMemberPath="title" Width="200"></ComboBox>
                 <TextBlock Text="Выбрать изображение:"></TextBlock>
                 <Button Content="Добавить изображение" Name="AddImage" Click="AddImage_Click"></Button>
                 <Button Content="Добавить отсчёт" Name="AddReport" Click="AddReport_Click"></Button>
