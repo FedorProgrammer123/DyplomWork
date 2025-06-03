@@ -39,6 +39,11 @@
                                 <Run Text="Максимальный балл:"></Run>
                                 <Run Text="{Binding maxScore}"></Run>
                             </TextBlock>
+                            <TextBlock>
+                                <Run Text="Ссылка"></Run>
+                                <Run Text="{Binding Href}"></Run>
+                            </TextBlock>
+                            <Button Content="Перейти" Width="200" Name="GoToComplete" Tag="{Binding Href}" Click="GoToComplete_Click"></Button>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>

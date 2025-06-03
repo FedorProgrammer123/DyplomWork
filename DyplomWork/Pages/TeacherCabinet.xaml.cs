@@ -27,6 +27,7 @@ namespace DyplomWork.Pages
             InitializeComponent();
             ShowFemale.Text = userfemale;
             ShowName.Text = username;
+            TestView.ItemsSource = DyplomWorkEntities1.GetContext().Test.ToList();
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
@@ -36,39 +37,12 @@ namespace DyplomWork.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Classes.Manager.MainFrame.Navigate(new Pages.AddTest());
+            Classes.Manager.MainFrame.Navigate(new Pages.AddTest(null));
         }
 
         private void AddUser_Click(object sender, RoutedEventArgs e)
         {
             Classes.Manager.MainFrame.Navigate(new Pages.AddStudent());
-        }
-
-        private void DeleteUserButton_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                var idStudent = int.Parse(DeleteUser.Text);
-                var userRemove = Classes.Context.GetContext().Users.FirstOrDefault(u => u.studentId == idStudent);
-                if (string.IsNullOrEmpty(idStudent.ToString()))
-                {
-                    MessageBox.Show("Введите id","Error",MessageBoxButton.OK,MessageBoxImage.Error);
-                }
-                else if (userRemove != null)
-                {
-                    Classes.Context.GetContext().Users.Remove(userRemove);
-                    MessageBox.Show("Студент удалён", "Sucess", MessageBoxButton.OK, MessageBoxImage.Information);
-                    Classes.Context.GetContext().SaveChanges();
-                }
-                else
-                {
-                    MessageBox.Show("Пользователь с таким id не найден", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Ошибка в базе", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
         }
 
         private void ShowReport_Click(object sender, RoutedEventArgs e)
@@ -79,6 +53,11 @@ namespace DyplomWork.Pages
         private void ShowUserList_Click(object sender, RoutedEventArgs e)
         {
             Classes.Manager.MainFrame.Navigate(new Pages.ShowStudents());
+        }
+
+        private void EditTest_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Pages.AddTest((sender as Button).DataContext as Test));
         }
     }
 }

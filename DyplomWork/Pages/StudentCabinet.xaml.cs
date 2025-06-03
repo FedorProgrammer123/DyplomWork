@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,6 +42,23 @@ namespace DyplomWork.Pages
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Classes.Manager.MainFrame.Navigate(new ShowReportStudentVersion());
+        }
+
+        private void GoToComplete_Click(object sender, RoutedEventArgs e)
+        {
+            var button = sender as Button;
+            if (button != null && !string.IsNullOrEmpty(button.Tag.ToString()))
+            {
+                string link = button.Tag.ToString();
+                try
+                {
+                    Process.Start(link);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ошибка открытия!","Error",MessageBoxButton.OK,MessageBoxImage.Error);
+                }
+            }
         }
     }
 }

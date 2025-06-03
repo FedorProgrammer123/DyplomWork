@@ -45,7 +45,11 @@
             </ListView>
         </Grid>
         <Grid Grid.Row="2">
-            <Button Content="Выйти" Name="ExitButton" Click="ExitButton_Click"></Button>
+            <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Button Content="Выйти" Name="ExitButton" Click="ExitButton_Click" Width="200"></Button>
+                <Button Content="Удалить" Name="DeleteStudentButton" Margin="20 0 0 0" Width="200"></Button>
+            </WrapPanel>
+            
         </Grid>
     </Grid>
 </Page>

@@ -20,15 +20,17 @@
         <Grid Grid.Row="1">
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="Название теста:"></TextBlock>
-                <TextBox Name="SelectTitle" Width="200"></TextBox>
+                <TextBox Text="{Binding TitleTest.title}" Name="SelectTitle" Width="200"></TextBox>
                 <TextBlock Text="Описание теста:"></TextBlock>
-                <TextBox Name="EnterDesctiption" Width="200"></TextBox>
+                <TextBox Text="{Binding description}" Name="EnterDesctiption" Width="200"></TextBox>
                 <TextBlock Text="Максимальный балл:"></TextBlock>
-                <TextBox Name="EnterMaxScore" Width="200"></TextBox>
+                <TextBox Text="{Binding maxScore}" Name="EnterMaxScore" Width="200"></TextBox>
                 <TextBlock Text="Длительность"></TextBlock>
-                <TextBox Name="EnterTimeLimit" Width="200"></TextBox>
+                <TextBox Text="{Binding time_limit}" Name="EnterTimeLimit" Width="200"></TextBox>
                 <TextBlock Text="Номер курса:"></TextBlock>
-                <TextBox Name="EnterCourse" Width="200"></TextBox>
+                <TextBox Text="{Binding courseId}" Name="EnterCourse" Width="200"></TextBox>
+                <TextBlock Text="Ссылка:"></TextBlock>
+                <TextBox Text="{Binding Href}" Name="EnterHref" Width="200"></TextBox>
                 <Button Content="Добавить тест" Click="Button_Click_1"></Button>
                 <Button Content="Назад" Click="Button_Click"></Button>
             </StackPanel>

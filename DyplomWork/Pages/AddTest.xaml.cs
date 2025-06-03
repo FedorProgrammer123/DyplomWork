@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,14 +22,20 @@ namespace DyplomWork.Pages
     /// </summary>
     public partial class AddTest : Page
     {
-        public AddTest()
+        private Test adding = new Test();
+        public AddTest(Test AddingTest)
         {
+            if (AddingTest != null)
+            {
+                adding = AddingTest;
+            }
             InitializeComponent();
+            DataContext = adding;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Classes.Manager.MainFrame.Navigate(new Pages.AdminCabinet(Classes.CurrentUser.UserEmail,Classes.CurrentUser.UserPassword));
+            Classes.Manager.MainFrame.Navigate(new Pages.TeacherCabinet(Classes.CurrentUser.UserEmail,Classes.CurrentUser.UserPassword));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -40,6 +47,7 @@ namespace DyplomWork.Pages
                 var maxScore = int.Parse(EnterMaxScore.Text);
                 var timeLimit = TimeSpan.Parse(EnterTimeLimit.Text);
                 var course = int.Parse(EnterCourse.Text);
+                var href = EnterHref.Text;
                 var TitleTest = new TitleTest()
                 {
                     title = Title
@@ -50,7 +58,8 @@ namespace DyplomWork.Pages
                     description = Description,
                     maxScore = maxScore,
                     time_limit = timeLimit,
-                    courseId = course
+                    courseId = course,
+                    Href = href
 
                 };
                 if (Classes.Context.GetContext().titleTest.Any(u => u.title == Title))
@@ -59,8 +68,8 @@ namespace DyplomWork.Pages
                 }
                 else
                 {
-                    Classes.Context.GetContext().titleTest.Add(TitleTest);
-                    Classes.Context.GetContext().test.Add(Test);
+                    Classes.Context.GetContext().titleTest.AddOrUpdate(TitleTest);
+                    Classes.Context.GetContext().test.AddOrUpdate(Test);
                     Classes.Context.GetContext().SaveChanges();
                     MessageBox.Show("Тест успешно добавлен", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                 }

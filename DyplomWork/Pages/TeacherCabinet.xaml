@@ -11,24 +11,73 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition Height="210"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <TextBlock Text="Кабинет преподавателя" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
         </Grid>
         <Grid Grid.Row="1">
-            <TextBlock Text="{Binding firstName}" Name="ShowFemale" Margin="60 0 0 0"></TextBlock>
-            <TextBlock Text="{Binding lastName}" Name="ShowName"></TextBlock>
-            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock Text="ID студента:"></TextBlock>
-                <TextBox Name="DeleteUser" Margin="0 10 0 0"></TextBox>
-                <Button Content="Delete" Margin="0 10 0 0" Name="DeleteUserButton" Click="DeleteUserButton_Click"></Button>
-                <Button Content="Добавить студента" Margin="0 10 0 0" Name="AddUser" Click="AddUser_Click"></Button>
-                <Button Content="Посмотреть список пользователей" Name="ShowUserList" Margin="0 10 0 0" Click="ShowUserList_Click"></Button>
-                <Button Content="Добавить тест" Margin="0 10 0 0" Click="Button_Click"></Button>
-                <Button Content="Посмотреть отсчёт" Name="ShowReport" Margin="0 10 0 0" Click="ShowReport_Click"></Button>
-                <Button Content="Выйти" Name="ExitButton" Margin="0 10 0 0" Click="ExitButton_Click"></Button>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="{Binding firstName}" Name="ShowFemale"></TextBlock>
+                <TextBlock Text="{Binding lastName}" Name="ShowName"></TextBlock>
             </StackPanel>
+            
+        </Grid>
+        <Grid Grid.Row="2">
+            <ListView x:Name="TestView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="500"></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0">
+                                <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                    <TextBlock>
+                                            <Run Text="Название:"></Run>
+                                            <Run Text="{Binding TitleTest.title}"></Run>
+                                    </TextBlock>
+                                    <TextBlock>
+                                            <Run Text="Описание:"></Run>
+                                            <Run Text="{Binding description}"></Run>
+                                    </TextBlock>
+                                </StackPanel>
+                                
+                            </Grid>
+                            <Grid Grid.Column="1">
+                                <StackPanel Orientation="Vertical" HorizontalAlignment="Right" VerticalAlignment="Top">
+                                    <Button Content="Редактировать" Width="200" Name="EditTest" Click="EditTest_Click"></Button>
+                                    
+                                </StackPanel>
+                            </Grid>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Content="Добавить студента" Margin="0 10 0 0" Name="AddUser" Click="AddUser_Click"></Button>
+                    <Button Content="Посмотреть список пользователей" Name="ShowUserList" Margin="0 10 0 0" Click="ShowUserList_Click"></Button>
+                    <Button Content="Добавить тест" Margin="0 10 0 0" Click="Button_Click"></Button>
+                    
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Column="1">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+                    <Button Content="Удалить тест" Name="DeleteTestButton"></Button>
+                    <Button Content="Посмотреть отсчёт" Name="ShowReport" Margin="0 10 0 0" Click="ShowReport_Click"></Button>
+                    <Button Content="Выйти" Name="ExitButton" Margin="0 10 0 0" Click="ExitButton_Click"></Button>
+                </StackPanel>
+            </Grid>
         </Grid>
     </Grid>
 </Page>
