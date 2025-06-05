@@ -19,6 +19,7 @@ namespace DyplomWork.Datas
         public string Female { get; set; }
         public int TitleTestID { get; set; }
         public byte[] TestScreen { get; set; }
+        public Nullable<int> Mark { get; set; }
     
         public virtual TitleTest TitleTest { get; set; }
     }

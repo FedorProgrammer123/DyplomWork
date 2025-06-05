@@ -102,7 +102,6 @@
           <ScalarProperty Name="time_limit" ColumnName="time_limit" />
           <ScalarProperty Name="courseId" ColumnName="courseId" />
           <ScalarProperty Name="Href" ColumnName="Href" />
-          <ScalarProperty Name="Mark" ColumnName="Mark" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -114,6 +113,7 @@
           <ScalarProperty Name="Female" ColumnName="Female" />
           <ScalarProperty Name="TitleTestID" ColumnName="TitleTestID" />
           <ScalarProperty Name="TestScreen" ColumnName="TestScreen" />
+          <ScalarProperty Name="Mark" ColumnName="Mark" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

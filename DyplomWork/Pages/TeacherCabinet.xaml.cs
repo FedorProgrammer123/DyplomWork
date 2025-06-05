@@ -59,5 +59,19 @@ namespace DyplomWork.Pages
         {
             Classes.Manager.MainFrame.Navigate(new Pages.AddTest((sender as Button).DataContext as Test));
         }
+
+        private void DeleteTestButton_Click(object sender, RoutedEventArgs e)
+        {
+            var DeleteTest = TestView.SelectedItems.Cast<Test>().ToList();
+            try
+            {
+                DyplomWorkEntities1.GetContext().Test.RemoveRange(DeleteTest);
+                MessageBox.Show("Успешное удаление","Success",MessageBoxButton.OK,MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка удаления","Error",MessageBoxButton.OK,MessageBoxImage.Error);
+            }
+        }
     }
 }

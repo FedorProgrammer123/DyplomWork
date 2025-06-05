@@ -98,7 +98,6 @@
           <Property Name="time_limit" Type="time" Precision="7" Nullable="false" />
           <Property Name="courseId" Type="int" Nullable="false" />
           <Property Name="Href" Type="text" />
-          <Property Name="Mark" Type="nchar" MaxLength="10" />
         </EntityType>
         <EntityType Name="TestReport">
           <Key>
@@ -108,7 +107,8 @@
           <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
           <Property Name="Female" Type="nvarchar" MaxLength="250" Nullable="false" />
           <Property Name="TitleTestID" Type="int" Nullable="false" />
-          <Property Name="TestScreen" Type="image" Nullable="false" />
+          <Property Name="TestScreen" Type="image" />
+          <Property Name="Mark" Type="int" />
         </EntityType>
         <EntityType Name="TestResult">
           <Key>
@@ -501,7 +501,6 @@
           <Property Name="time_limit" Type="Time" Nullable="false" Precision="7" />
           <Property Name="courseId" Type="Int32" Nullable="false" />
           <Property Name="Href" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Mark" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
           <NavigationProperty Name="Course" Relationship="Self.FK_Test_Course" FromRole="Test" ToRole="Course" />
           <NavigationProperty Name="Question" Relationship="Self.FK_Question_Test" FromRole="Test" ToRole="Question" />
           <NavigationProperty Name="TitleTest" Relationship="Self.FK_Test_TitleTest" FromRole="Test" ToRole="TitleTest" />
@@ -515,7 +514,8 @@
           <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Female" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="TitleTestID" Type="Int32" Nullable="false" />
-          <Property Name="TestScreen" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+          <Property Name="TestScreen" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Mark" Type="Int32" />
           <NavigationProperty Name="TitleTest" Relationship="Self.FK_TestReport_TitleTest" FromRole="TestReport" ToRole="TitleTest" />
         </EntityType>
         <EntityType Name="TestResult">
@@ -911,7 +911,6 @@
                 <ScalarProperty Name="time_limit" ColumnName="time_limit" />
                 <ScalarProperty Name="courseId" ColumnName="courseId" />
                 <ScalarProperty Name="Href" ColumnName="Href" />
-                <ScalarProperty Name="Mark" ColumnName="Mark" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -923,6 +922,7 @@
                 <ScalarProperty Name="Female" ColumnName="Female" />
                 <ScalarProperty Name="TitleTestID" ColumnName="TitleTestID" />
                 <ScalarProperty Name="TestScreen" ColumnName="TestScreen" />
+                <ScalarProperty Name="Mark" ColumnName="Mark" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

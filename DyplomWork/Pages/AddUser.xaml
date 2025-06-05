@@ -19,11 +19,11 @@
         <Grid Grid.Row="1">
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="Имя:"></TextBlock>
-                <TextBox Name="EnterNameBox"></TextBox>
-                <TextBlock Text="Фамилия:"></TextBlock>
-                <TextBox Name="EnterFemaleBox"></TextBox>
+                <TextBox Text="{Binding firstName}" Name="EnterNameBox"></TextBox>
+                <TextBlock  Text="Фамилия:"></TextBlock>
+                <TextBox Text="{Binding lastName}" Name="EnterFemaleBox"></TextBox>
                 <TextBlock Text="Email:"></TextBlock>
-                <TextBox Name="EnterEmailBox"></TextBox>
+                <TextBox Text="{Binding email}" Name="EnterEmailBox"></TextBox>
                 <TextBlock Text="Password:"></TextBlock>
                 <PasswordBox Name="EnterPasswordBox"></PasswordBox>
                 <TextBlock Text="Номер группы:"></TextBlock>
@@ -31,7 +31,7 @@
                 <TextBlock Text="Курс:"></TextBlock>
                 <ComboBox Name="EnterCourseBox" DisplayMemberPath="courseYear"></ComboBox>
                 <TextBlock Text="Роль:"></TextBlock>
-                <ComboBox Name="SelectRoleBox" DisplayMemberPath="Role" SelectedValuePath="IDRole"></ComboBox>
+                <ComboBox Name="SelectRoleBox" DisplayMemberPath="Role"></ComboBox>
                 <Button Content="Добавить" Name="Add" Click="Add_Click"></Button>
                 <Button Content="Выйти" Width="200" Height="46" Click="Button_Click"></Button>
             </StackPanel>

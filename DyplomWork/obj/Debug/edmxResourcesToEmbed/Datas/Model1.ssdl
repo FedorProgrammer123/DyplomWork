@@ -93,7 +93,6 @@
     <Property Name="time_limit" Type="time" Precision="7" Nullable="false" />
     <Property Name="courseId" Type="int" Nullable="false" />
     <Property Name="Href" Type="text" />
-    <Property Name="Mark" Type="nchar" MaxLength="10" />
   </EntityType>
   <EntityType Name="TestReport">
     <Key>
@@ -103,7 +102,8 @@
     <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
     <Property Name="Female" Type="nvarchar" MaxLength="250" Nullable="false" />
     <Property Name="TitleTestID" Type="int" Nullable="false" />
-    <Property Name="TestScreen" Type="image" Nullable="false" />
+    <Property Name="TestScreen" Type="image" />
+    <Property Name="Mark" Type="int" />
   </EntityType>
   <EntityType Name="TestResult">
     <Key>

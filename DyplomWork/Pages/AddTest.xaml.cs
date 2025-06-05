@@ -40,18 +40,17 @@ namespace DyplomWork.Pages
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                var Title = SelectTitle.Text;
-                var Description = EnterDesctiption.Text;
-                var maxScore = int.Parse(EnterMaxScore.Text);
-                var timeLimit = TimeSpan.Parse(EnterTimeLimit.Text);
-                var course = int.Parse(EnterCourse.Text);
-                var href = EnterHref.Text;
+            var Title = SelectTitle.Text;
+            var Description = EnterDesctiption.Text;
+            var maxScore = int.Parse(EnterMaxScore.Text);
+            var timeLimit = TimeSpan.Parse(EnterTimeLimit.Text);
+            var course = int.Parse(EnterCourse.Text);
+            var href = EnterHref.Text;
                 var TitleTest = new TitleTest()
                 {
                     title = Title
                 };
+
                 var Test = new Test()
                 {
                     testId = TitleTest.IDTitle,
@@ -60,24 +59,41 @@ namespace DyplomWork.Pages
                     time_limit = timeLimit,
                     courseId = course,
                     Href = href
-
                 };
-                if (Classes.Context.GetContext().titleTest.Any(u => u.title == Title))
+
+                try
                 {
-                    MessageBox.Show("Ошибка тест уже есть в базе", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    // Определяем режим операции: добавление или редактирование
+                    if (Test.testId > 0) // Проверяем, задан ли id теста
+                    {
+                        // Редактируем существующий тест
+                        Test.testId = TitleTest.IDTitle;
+                        Test.description = Description;
+                        Test.maxScore = maxScore;
+                        Test.time_limit = timeLimit;
+                        Test.courseId = course;
+                        Test.Href = href;
+
+                        // Обновляем свойства теста в БД
+                        DyplomWorkEntities1.GetContext().Test.Attach(Test);
+                        DyplomWorkEntities1.GetContext().Entry(Test).State = System.Data.Entity.EntityState.Modified;
+                    }
+                    else
+                    {
+                        // Создаем новый тест
+                        DyplomWorkEntities1.GetContext().TitleTest.AddOrUpdate(TitleTest);
+                        DyplomWorkEntities1.GetContext().Test.AddOrUpdate(Test);
+                    }
+
+                    // Сохраняем изменения в базе данных
+                    DyplomWorkEntities1.GetContext().SaveChanges();
+                    MessageBox.Show("Тест успешно Отредактирован", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
-                else
+                catch (Exception ex)
                 {
-                    Classes.Context.GetContext().titleTest.AddOrUpdate(TitleTest);
-                    Classes.Context.GetContext().test.AddOrUpdate(Test);
-                    Classes.Context.GetContext().SaveChanges();
-                    MessageBox.Show("Тест успешно добавлен", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show(ex.ToString(), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Ошибка добавления","Error",MessageBoxButton.OK,MessageBoxImage.Error);
             }
         }
+            
     }
-}

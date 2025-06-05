@@ -34,6 +34,10 @@
                             <TextBlock Text="{Binding Female}"></TextBlock>
                             <TextBlock Text="{Binding Name}"></TextBlock>
                             <TextBlock Text="{Binding TitleTest.title}"></TextBlock>
+                            <TextBlock>
+                                <Run Text="Оценка:"></Run>
+                                <Run Text="{Binding Mark}"></Run>
+                            </TextBlock>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>

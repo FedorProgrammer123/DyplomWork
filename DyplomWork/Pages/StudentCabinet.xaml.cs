@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DyplomWork.Datas;
 
 namespace DyplomWork.Pages
 {
@@ -26,7 +27,7 @@ namespace DyplomWork.Pages
             InitializeComponent();
             ShowName.Text = "Имя: " + username;
             ShowLastName.Text = "Фамилия: " + lastname;
-            ShowTest.ItemsSource = Classes.Context.GetContext().test.ToList();
+            ShowTest.ItemsSource = DyplomWorkEntities1.GetContext().Test.ToList();
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)

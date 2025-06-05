@@ -22,12 +22,19 @@ namespace DyplomWork.Pages
     /// </summary>
     public partial class AddUser : Page
     {
-        public AddUser()
+        private Users users = new Users();
+        public AddUser(Users usersnew)
         {
             InitializeComponent();
-            SelectRoleBox.ItemsSource = Classes.Context.GetContext().roles.Where(r => r != null).ToList();
-            EnterCourseBox.ItemsSource = Classes.Context.GetContext().Users.Where(r => r != null).ToList();
-            EnterGroupNumberBox.ItemsSource = Classes.Context.GetContext().Users.Where(r => r != null).ToList();
+            
+            if (usersnew != null)
+            {
+                users = usersnew;
+            }
+            DataContext = users;
+            SelectRoleBox.ItemsSource = DyplomWorkEntities1.GetContext().Roles.Where(r => r != null).ToList();
+            EnterCourseBox.ItemsSource = DyplomWorkEntities1.GetContext().Users.Where(r => r != null).ToList();
+            EnterGroupNumberBox.ItemsSource = DyplomWorkEntities1.GetContext().Users.Where(r => r != null).ToList();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -37,55 +44,59 @@ namespace DyplomWork.Pages
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            try
+            string firstName = EnterNameBox.Text;
+            string lastName = EnterFemaleBox.Text;
+            string email = EnterEmailBox.Text;
+            string password = EnterPasswordBox.Password;
+            // Безопасное парсинг значений
+            if (!int.TryParse(EnterGroupNumberBox.Text, out int EnterGroup))
             {
-                // Получаем данные из UI
-                string firstName = EnterNameBox.Text;
-                string lastName = EnterFemaleBox.Text;
-                string email = EnterEmailBox.Text;
-                string password = EnterPasswordBox.Password;
+                MessageBox.Show("Некорректное значение группы. Пожалуйста, введите целое число.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
 
-                // Безопасное парсинг значений
-                if (!int.TryParse(EnterGroupNumberBox.Text, out int EnterGroup))
+            else if (!int.TryParse(EnterCourseBox.Text, out int EnterCourse))
+            {
+                MessageBox.Show("Некорректное значение курса. Пожалуйста, введите целое число.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            else if (!int.TryParse(SelectRoleBox.SelectedValue?.ToString(), out int SelectRole))
+            {
+                MessageBox.Show("Некорректное значение роли. Пожалуйста, введите целое число.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            else
+            {
+                var user = new Users()
                 {
-                    MessageBox.Show("Некорректное значение группы. Пожалуйста, введите целое число.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
-                    return;
+                    firstName = firstName,
+                    lastName = lastName,
+                    email = email,
+                    password = password,
+                    groupNumber = EnterGroup,
+                    courseYear = EnterCourse,
+                    Role = SelectRole
+                };
+                if (users.studentId == 0)
+                {
+                    DyplomWorkEntities1.GetContext().Users.Add(users);
                 }
-
-                if (!int.TryParse(EnterCourseBox.Text, out int EnterCourse))
+                try
                 {
-                    MessageBox.Show("Некорректное значение курса. Пожалуйста, введите целое число.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
-                    return;
-                }
-
-                if (!int.TryParse(SelectRoleBox.SelectedValue?.ToString(), out int SelectRole))
-                {
-                    MessageBox.Show("Некорректное значение роли. Пожалуйста, введите целое число.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
-                    return;
-                }
-
-                using (var model = new Classes.Context())
-                {
-                    var user = new Users()
-                    {
-                        firstName = firstName,
-                        lastName = lastName,
-                        email = email,
-                        password = password,
-                        groupNumber = EnterGroup,
-                        courseYear = EnterCourse,
-                        Role = SelectRole
-                    };
-                    Classes.Context.GetContext().Users.Add(user);
-                    Classes.Context.GetContext().SaveChanges();
+                    
+                    DyplomWorkEntities1.GetContext().SaveChanges();
                     MessageBox.Show("Пользователь успешно добавлен");
+
                 }
+                catch (Exception ex)
+                {
+                    // Обрабатываем возможные ошибки
+                    MessageBox.Show($"Ошибка при добавлении пользователя: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                
             }
-            catch (Exception ex)
-            {
-                // Обрабатываем возможные ошибки
-                MessageBox.Show($"Ошибка при добавлении пользователя: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
+            
         }
     }
 }

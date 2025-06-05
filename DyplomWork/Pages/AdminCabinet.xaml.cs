@@ -27,6 +27,7 @@ namespace DyplomWork.Pages
             InitializeComponent();
             ShowFemale.Text = userfemale;
             ShowName.Text = username;
+            ShowUsers.ItemsSource = DyplomWorkEntities1.GetContext().Users.ToList();
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
@@ -36,7 +37,7 @@ namespace DyplomWork.Pages
 
         private void AddUser_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new Pages.AddUser());
+            Manager.MainFrame.Navigate(new Pages.AddUser(null));
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -46,32 +47,13 @@ namespace DyplomWork.Pages
 
         private void DeleteUserButton_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                // Получаем ID из текстового поля
-                int id = int.Parse(DeleteUser.Text);
+           
+            
+        }
 
-                // Удаляем пользователя с указанным ID
-                var userToRemove = Classes.Context.GetContext().Users.FirstOrDefault(u => u.studentId == id);
-                if (userToRemove != null)
-                {
-                    Classes.Context.GetContext().Users.Remove(userToRemove);
-                    MessageBox.Show($"Пользователь с ID {id} удалён.");
-                    Classes.Context.GetContext().SaveChanges();
-                }
-                else
-                {
-                    MessageBox.Show($"Пользователь с ID {id} не найден.");
-                }
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Необходимо ввести корректный ID.");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка при удалении пользователя: {ex.Message}");
-            }
+        private void EditUser_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new AddUser((sender as Button).DataContext as Users));
         }
     }
     }

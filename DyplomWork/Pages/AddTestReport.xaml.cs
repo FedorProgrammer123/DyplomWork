@@ -26,7 +26,7 @@ namespace DyplomWork.Pages
         public AddTestReport()
         {
             InitializeComponent();
-            SelectTestBox.ItemsSource = Classes.Context.GetContext().titleTest.ToList();
+            SelectTestBox.ItemsSource = DyplomWorkEntities1.GetContext().TitleTest.ToList();
         }
 
         private void AddImage_Click(object sender, RoutedEventArgs e)
@@ -62,18 +62,15 @@ namespace DyplomWork.Pages
                 MessageBox.Show("Данные пустые", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
-
-            using (var context = DyplomWorkEntities1.GetContext())
-            {
                 // Проверяем, существует ли тест с таким названием
-                var existingTest = context.TitleTest.FirstOrDefault(t => t.title == SelectTestBox.Text);
+                var existingTest = DyplomWorkEntities1.GetContext().TitleTest.FirstOrDefault(t => t.title == SelectTestBox.Text);
 
                 if (existingTest == null)
                 {
                     // Если теста ещё нет — добавляем новый
                     var newTest = new TitleTest { title = SelectTestBox.Text };
-                    context.TitleTest.Add(newTest);
-                    context.SaveChanges(); // Сохранение изменений
+                    DyplomWorkEntities1.GetContext().TitleTest.Add(newTest);
+                    DyplomWorkEntities1.GetContext().SaveChanges(); // Сохранение изменений
 
                     // Получаем ID нового теста
                     int testId = newTest.IDTitle;
@@ -96,8 +93,8 @@ namespace DyplomWork.Pages
 
                 try
                 {
-                    context.TestReport.Add(report); // Добавляем отчёт
-                    context.SaveChanges();          // Сохраняем изменения
+                    DyplomWorkEntities1.GetContext().TestReport.Add(report); // Добавляем отчёт
+                    DyplomWorkEntities1.GetContext().SaveChanges();          // Сохраняем изменения
 
                     MessageBox.Show("Отчет успешно добавлен", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
@@ -107,7 +104,6 @@ namespace DyplomWork.Pages
                 }
 
             }
-        }
 
         private void GoBackButton_Click(object sender, RoutedEventArgs e)
         {

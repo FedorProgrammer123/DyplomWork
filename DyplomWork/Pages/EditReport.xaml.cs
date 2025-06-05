@@ -16,6 +16,7 @@ using System.Windows.Shapes;
 using DyplomWork.Datas;
 using System.IO;
 using Microsoft.Win32;
+using System.Data.Entity.Migrations;
 namespace DyplomWork.Pages
 {
     /// <summary>
@@ -24,19 +25,27 @@ namespace DyplomWork.Pages
     public partial class EditReport : Page
     {
         private byte[] _selectedImageBytes;
-        public static TestReport contextTests = new TestReport();
+        public static TestReport ContextTests = new TestReport();
+
+        // Переменная для хранения исходного отчёта, передаваемого в редактор
+
         public EditReport(TestReport _test)
         {
-           
             InitializeComponent();
-            DataContext = contextTests;
-            SelectTestBox.ItemsSource = DyplomWorkEntities1.GetContext().TitleTest.ToList();
             if (_test != null)
             {
-                contextTests = _test;
+                ContextTests = _test;
             }
-            
+
+            // Заполняем список тестов
+            SelectTestBox.ItemsSource = DyplomWorkEntities1.GetContext().TitleTest.ToList();
+
+            // Привязываем данные формы к оригинальному отчёту
+            DataContext = ContextTests;
         }
+
+        // Метод загрузки существующих данных в UI
+
 
         private void GoBackButton_Click(object sender, RoutedEventArgs e)
         {
@@ -76,51 +85,32 @@ namespace DyplomWork.Pages
                 MessageBox.Show("Данные пустые", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
+                // Проверяем, существует ли тест с указанным названием
+                var selectedTest = DyplomWorkEntities1.GetContext().TitleTest.FirstOrDefault(t => t.title == SelectTestBox.Text);
+                // Готовим обновлённую версию отчёта
 
-            using (var context = DyplomWorkEntities1.GetContext())
-            {
-                // Проверяем, существует ли тест с таким названием
-                var existingTest = context.TitleTest.FirstOrDefault(t => t.title == SelectTestBox.Text);
-
-                if (existingTest == null)
+                if (ContextTests.ID == 0)
                 {
-                    // Если теста ещё нет — добавляем новый
-                    var newTest = new TitleTest { title = SelectTestBox.Text };
-                    context.TitleTest.Add(newTest);
-                    context.SaveChanges(); // Сохранение изменений
-
-                    // Получаем ID нового теста
-                    int testId = newTest.IDTitle;
-                    existingTest = newTest;
+                    ContextTests.Name = EnterNameBox.Text;
+                    ContextTests.Female = EnterFemaleBox.Text;
+                    ContextTests.TitleTestID = selectedTest.IDTitle;
+                    ContextTests.TestScreen = _selectedImageBytes;
+                    ContextTests.Mark = int.Parse(EnterMarkBox.Text);
+                    
                 }
-                else
-                {
-                    // Используем существующий идентификатор теста
-                    int testId = existingTest.IDTitle;
-                }
-
-                // Создаем отчет
-                var report = new Datas.TestReport
-                {
-                    Name = EnterNameBox.Text,
-                    Female = EnterFemaleBox.Text,
-                    TitleTestID = existingTest.IDTitle,
-                    TestScreen = _selectedImageBytes
-                };
-
                 try
                 {
-                    context.TestReport.Add(report); // Добавляем отчёт
-                    context.SaveChanges();          // Сохраняем изменения
+                    DyplomWorkEntities1.GetContext().TestReport.AddOrUpdate(ContextTests);
+                    DyplomWorkEntities1.GetContext().SaveChanges(); // Сохраняем изменения
+                    MessageBox.Show("Отчёт успешно обновлён", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                    // Применяем изменения
 
-                    MessageBox.Show("Отчет успешно добавлен", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Ошибка добавления отчета:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show($"Ошибка обновления отчёта:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
-
-            }
+            
         }
     }
 }

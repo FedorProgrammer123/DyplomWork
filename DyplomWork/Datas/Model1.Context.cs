@@ -16,11 +16,11 @@ namespace DyplomWork.Datas
     public partial class DyplomWorkEntities1 : DbContext
     {
         public DyplomWorkEntities1()
-            : base("name=DyplomWorkEntities")
+            : base("name=DyplomWorkEntities1")
         {
         }
         private static DyplomWorkEntities1 context;
-        public static DyplomWorkEntities1 GetContext()
+        public static  DyplomWorkEntities1 GetContext()
         {
             if (context == null)
             {

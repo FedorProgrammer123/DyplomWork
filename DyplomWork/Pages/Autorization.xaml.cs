@@ -32,9 +32,9 @@ namespace DyplomWork.Pages
         {
             string login = EnterLoginBox.Text;
             string password = EnterPasswordBox.Password;
-            using (var model = new Classes.Context())
+            try
             {
-                var ExixstsUser = model.Users.FirstOrDefault(u => u.email == login && u.password == password);
+                var ExixstsUser = DyplomWorkEntities1.GetContext().Users.FirstOrDefault(u => u.email == login && u.password == password);
                 if (ExixstsUser == null)
                 {
                     string title = "Error";
@@ -70,6 +70,11 @@ namespace DyplomWork.Pages
                     }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка в базе","Error",MessageBoxButton.OK,MessageBoxImage.Error);
+            }
+                
+            }
         }
     }
-}

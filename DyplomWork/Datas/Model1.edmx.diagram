@@ -4,22 +4,22 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="b05e3226fd1f4e2cab2c61b1f736c18a" Name="Diagram1">
+      <Diagram DiagramId="f68e2124bee749d5858773c0d66ea191" Name="Diagram1">
         <EntityTypeShape EntityType="DyplomWorkModel.AnswerOption" Width="1.5" PointX="7.5" PointY="5" IsExpanded="true" />
         <EntityTypeShape EntityType="DyplomWorkModel.Attendance" Width="1.5" PointX="5.25" PointY="10.875" IsExpanded="true" />
         <EntityTypeShape EntityType="DyplomWorkModel.CorrectAnswer" Width="1.5" PointX="5.25" PointY="8.375" IsExpanded="true" />
         <EntityTypeShape EntityType="DyplomWorkModel.Course" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DyplomWorkModel.Lesson" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DyplomWorkModel.Question" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DyplomWorkModel.Roles" Width="1.5" PointX="1.5" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DyplomWorkModel.Roles" Width="1.5" PointX="1.5" PointY="16.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DyplomWorkModel.StudentAnswer" Width="1.5" PointX="9.75" PointY="5.125" IsExpanded="true" />
         <EntityTypeShape EntityType="DyplomWorkModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="1.375" IsExpanded="true" />
         <EntityTypeShape EntityType="DyplomWorkModel.Test" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DyplomWorkModel.TestReport" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DyplomWorkModel.TestReport" Width="1.5" PointX="3" PointY="8.875" IsExpanded="true" />
         <EntityTypeShape EntityType="DyplomWorkModel.TestResult" Width="1.5" PointX="5.25" PointY="2" IsExpanded="true" />
         <EntityTypeShape EntityType="DyplomWorkModel.TitleTest" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="DyplomWorkModel.Topic" Width="1.5" PointX="0.75" PointY="21.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DyplomWorkModel.Users" Width="1.5" PointX="1.5" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="DyplomWorkModel.Topic" Width="1.5" PointX="0.75" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DyplomWorkModel.Users" Width="1.5" PointX="1.5" PointY="12" IsExpanded="true" />
         <AssociationConnector Association="DyplomWorkModel.FK_AnswerOption_CorrectAnswer" ManuallyRouted="false" />
         <AssociationConnector Association="DyplomWorkModel.FK_AnswerOption_Question" ManuallyRouted="false" />
         <AssociationConnector Association="DyplomWorkModel.FK_StudentAnswer_AnswerOption" ManuallyRouted="false" />

@@ -5,26 +5,67 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DyplomWork.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="800" d:DesignWidth="800"
       Title="AdminCabinet">
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="75"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <TextBlock Text="Кабинет администратора" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <WrapPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock Text="{Binding firstName}" Name="ShowFemale" Margin="60 0 0 0"></TextBlock>
+                <TextBlock Text="{Binding lastName}" Name="ShowName"></TextBlock>
+            </WrapPanel>
+            
         </Grid>
         <Grid Grid.Row="1">
-            <TextBlock Text="{Binding firstName}" Name="ShowFemale" Margin="60 0 0 0"></TextBlock>
-            <TextBlock Text="{Binding lastName}" Name="ShowName"></TextBlock>
-            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock Text="ID студента/преподавателя:"></TextBlock>
-                <TextBox Name="DeleteUser" Margin="0 10 0 0"></TextBox>
-                <Button Content="Delete" Margin="0 10 0 0" Name="DeleteUserButton" Click="DeleteUserButton_Click"></Button>
+            <ListView x:Name="ShowUsers">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <TextBlock>
+                                <Run Text="ID:"></Run>
+                                <Run Text="{Binding studentId}"></Run>
+                            </TextBlock>
+                            <TextBlock>
+                                <Run Text="ФИ:"></Run>
+                                <Run Text="{Binding firstName}"></Run>
+                                <Run Text="{Binding lastName}"></Run>
+                            </TextBlock>
+                            <TextBlock>
+                                <Run Text="Email:"></Run>
+                                <Run Text="{Binding email}"></Run>
+                            </TextBlock>
+                            <TextBlock>
+                                <Run Text="Password:"></Run>
+                                <Run Text="{Binding password}"></Run>
+                            </TextBlock>
+                            <TextBlock>
+                                <Run Text="Номер группы:"></Run>
+                                <Run Text="{Binding groupNumber}"></Run>
+                            </TextBlock>
+                            <TextBlock>
+                                <Run Text="Номер курса:"></Run>
+                                <Run Text="{Binding courseYear}"></Run>
+                            </TextBlock>
+                            <TextBlock>
+                                <Run Text="Роль:"></Run>
+                                <Run Text="{Binding Role}"></Run>
+                            </TextBlock>
+                            <Button Content="Редактировать" Name="EditUser" Width="200" Click="EditUser_Click"></Button>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+        <Grid Grid.Row="2">
+            
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
                 <Button Content="Добавить студента/преподавателя" Margin="0 10 0 0" Name="AddUser" Click="AddUser_Click"></Button>
-                <Button Content="Посмотреть список пользователей" Margin="0 10 0 0" Click="Button_Click"></Button>
                 <Button Content="Выйти" Name="ExitButton" Margin="0 10 0 0" Click="ExitButton_Click"></Button>
             </StackPanel>
         </Grid>
